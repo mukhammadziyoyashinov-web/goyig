@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фут Вики
+    </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 120px;
+            background: #222;
+            border-right: 2px solid #444;
+        }
+
+        .sidebar.right {
+            border-left: 2px solid #444;
+            border-right: none;
+        }
+
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(6px);
+            transform: scale(1.1);
+            transition: .3s;
+        }
+
+
+        .card:hover img {
+            filter: blur(0px);
+            transform: scale(1.05);
+        }
+
+        .card span {
+            position: absolute;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0px 0px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar"></div>
+
+    <div class="content">
+        <h1>Фут Вики(Сделано Я.М и Т.Д)</h1>
+
+        <div class="grid">
+
+
+            <div class="card">
+                <a href="Лиги.html">
+                    <img src="Images/Leagues.jpg">
+                </a>
+                <span>Лиги</span>
+            </div>
+
+            <div class="card">
+                <img src="https://tiermaker.com/images/templates/tier-list-tier-list-1289304/12893041638200313.png">
+                <span>Тир Лист</span>
+            </div>
+
+
+            <div class="card">
+                <a href="Составы(рил составы).html">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTZkv_jqRnIoUaJrjYjqq8iUxTGM6H-Kk_Yr3ihrV3fm7j6x-cMJq6Y3YSAJBaQre34HHECQlITGGdq6MY4_D0yAZVaWLDcQ5QETGe01xcmPVMf1fINTsfT23Xmz3LD40qMCwbJAxKOgQ&s=19">
+                </a>
+                <span>Составы</span>
+            </div>
+
+            <div class="card">
+                <img src="https://offside.kz/cache/imagine/1200/uploads/news/2025/07/11/6870afc652122723231001.jpg">
+                <span>Топ 5 игроков на каждую позицию</span>
+            </div>
+
+
+            <div class="card">
+                <img src="https://s0.rbk.ru/v6_top_pics/media/img/0/46/347589084718460.jpeg">
+                <span>Предикты на все главные события 25/26</span>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://resources.premierleague.pulselive.com/photo-resources/2025/04/01/f6d47868-77c1-4717-b8e7-5ffc92a340c5/2208004278.jpg?width=1440">
+                <span>Самые дорогие футболисты</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sidebar right"></div>
+    <div class="card">
+        <a href="offtop.html">
+            <img src="https://icdn.lenta.ru/images/2022/12/21/09/20221221091857155/square_320_7b7e094666ee66713c429b89fb91fff6.jpeg"
+                alt="Примечание">
+        </a>
+        <span>Оффтоп
+
+        </span>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

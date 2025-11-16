@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фут Вики — Шаблон 3 карточки</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        header {
+            text-align: center;
+            font-size: 36px;
+            background: #111;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 2px solid #333;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            margin-top: 120px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+
+        .card {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 2px solid #333;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(4px) brightness(60%);
+            transition: filter 0.3s;
+        }
+
+
+        .card:hover img {
+            filter: blur(0) brightness(100%);
+        }
+
+
+        .card span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+
+        .card:hover span {
+            opacity: 0;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            width: 100%;
+            color: #777;
+            margin-top: 50px;
+            border-top: 2px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>⚽ Фут Вики — Шаблон</header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://football-fun-live.com/uploads/posts/igroki-liverpulja-sostavili-tret-simvolicheskoj-sbornoj-lch.jpg"
+                alt="Карточка 1">
+            <span>"Большая Шестерка"</span>
+        </div>
+
+        <div class="card">
+            <img src="https://s-cdn.sportbox.ru/images/styles/upload/fp_fotos/aa/20/2dedddb37ef4baf48f5fccac298d767f6586f0136e5ca259365131.jpg"
+                alt="Карточка 2">
+            <span>Команды Средней таблицы</span>
+        </div>
+
+        <div class="card">
+            <img src="https://prsport.net/upload/burnley.jpg" alt="Карточка 3">
+            <span>Аутсайдеры/Новички</span>
+        </div>
+    </div>
+
+    <footer>Фут Вики © 2025</footer>
+
+</body>
+
+</html>

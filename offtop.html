@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фут Вики — Оффтоп</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0c0c0c;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            font-size: 36px;
+            background: #111;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 2px solid #444;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 120px auto 50px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 2px solid #333;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(4px) brightness(60%);
+            transition: filter 0.3s;
+        }
+
+        .card:hover img {
+            filter: blur(0) brightness(100%);
+        }
+
+        .card span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover span {
+            opacity: 0;
+        }
+
+        .text-field {
+            width: 100%;
+            max-width: 800px;
+            background: #111;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #333;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            width: 100%;
+            color: #777;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>⚽ Фут Вики — Шаблон</header>
+
+    <div class="container">
+
+
+        <div class="card">
+            <img src="Images/150997593_242560867412035_1238679067053600388_n.jpg" alt="Верхняя картинка">
+            <span>Небольшой оффтоп перед началом просмотра сайта</span>
+        </div>
+
+
+        <div class="text-field">
+            Не оценивайте этот проект прям всерьез,я за 2 часа через ютуб прошел базу html и после сразу приступил к
+            проету,но это не значит,Что я не
+            старался.Картинки,идею и простые коды делал я (Я.М),а Т.Д работал над дизайном,добавил эффекты и т.п за что
+            ему огромное спасибо.
+        </div>
+
+        <div class="card">
+            <img src="https://i2-prod.football.london/incoming/article22481400.ece/ALTERNATES/s1200b/0_GettyImages-1359229002.jpg"
+                alt="Нижняя картинка">
+            <span>Спасибо за внимание ^.^</span>
+        </div>
+
+    </div>
+    <a href="Составы.html" class="back">← Назад</a>
+
+    <footer>Фут Вики © 2025</footer>
+
+
+</body>
+
+</html>
